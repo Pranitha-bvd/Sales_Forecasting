@@ -8,6 +8,24 @@ Sale_Forecasting.ipynb: The Jupyter Notebook containing the complete analysis, d
 
 data: https://www.kaggle.com/datasets/ldausl/store-sales-time-series-forecasting
 
+### Dataset Import
+
+This project uses the Kaggle API to download the dataset directly into the notebook. The dataset is imported as a ZIP file and extracted programmatically. To use this feature:
+
+* Ensure you have the Kaggle API installed:
+
+pip install kaggle
+
+* Authenticate by placing your Kaggle API key (kaggle.json) in the appropriate directory:
+
+mkdir -p ~/.kaggle
+mv kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+
+* Download the dataset using the API:
+
+!kaggle datasets download -d <dataset-name> -p ./data --unzip
+
 
 ## Dependencies
 Ensure you have the following Python packages installed:
