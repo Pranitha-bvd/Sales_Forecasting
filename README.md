@@ -14,17 +14,17 @@ This project uses the Kaggle API to download the dataset directly into the noteb
 
 * Ensure you have the Kaggle API installed:
 
-pip install kaggle
+`pip install kaggle`
 
 * Authenticate by placing your Kaggle API key (kaggle.json) in the appropriate directory:
 
-mkdir -p ~/.kaggle
-mv kaggle.json ~/.kaggle/
-chmod 600 ~/.kaggle/kaggle.json
+`mkdir -p ~/.kaggle`
+`mv kaggle.json ~/.kaggle/`
+`chmod 600 ~/.kaggle/kaggle.json`
 
 * Download the dataset using the API:
 
-!kaggle datasets download -d <dataset-name> -p ./data --unzip
+`!kaggle datasets download -d <dataset-name> -p ./data --unzip`
 
 
 ## Dependencies
